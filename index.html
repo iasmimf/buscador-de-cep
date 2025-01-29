@@ -3,22 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista de Tarefas</title>
+  <title>Buscador de CEP</title>
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
   <div class="container">
-    <h1>Lista de Tarefas</h1>
-    <p>Adicione suas tarefas!</p>
-    <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+    <h1>Buscador de CEP</h1>
+    <p>Busque qualquer CEP do Brasil!</p>
+    <input type="text" id="cep" placeholder="Digite a seu cep">
+    <button onclick="obterCep()">montrar cep</button>
     <p id="mensagem"></p>
+    <div id="endereco"></div>
   </div>
-
-  <script>
-    function adicionarTarefa() {
-      let mensagem = "Tarefa adicionada com sucesso!";
-            document.getElementById("mensagem").textContent = mensagem;
-    }
-  </script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./arequivojs/script.js"></script>
 </body>
 </html>
